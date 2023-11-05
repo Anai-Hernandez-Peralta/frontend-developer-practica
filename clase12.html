@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700" rel="stylesheet">
+    <style>
+        :root {
+            --pinkLight: #c7c7c7;
+            --inputFiled: #f7f7f7;
+            --greenHospital: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .details-container {
+            width: 350px;
+            position: absolute;
+            right: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo {
+            width: 100%;
+            height: 50%;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .close-icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 10px;
+            top: 10px;
+        }
+        .close-icon:hover {
+            cursor: pointer;
+        }
+        .texts {
+            display: flex;
+            flex-direction: column;
+            margin: 40px 0;
+        }
+        .texts > p {
+            margin: 0;
+            padding: 0;
+        }
+        .texts p:nth-child(1) {
+            margin-bottom:10px ;
+            font-weight: bold;
+        }
+        .texts p:nth-child(2) {
+            color: var(--pinkLight);
+            font-size: var(--lg);
+            margin-bottom: 30px;
+        }
+        .texts p:nth-child(3) {
+            color: var(--pinkLight);
+            font-size: var(--md);
+        }
+        .primary-button {
+            background-color: var(--greenHospital);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 90%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 640px) {
+            .details-container {
+                width: 100%;
+            }
+            .texts {
+                margin: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <div class="details-container">
+            <div class="close-icon">
+                <img src="./assets/icons/icon_close.png" alt="">
+            </div>
+            <div class="photo">
+                <img src="./assets/bici.jpeg" alt="">
+            </div>
+
+            <div class="texts">
+                <p>$120.00</p>
+                <p>Bike</p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quos molestiae illum quisquam sint nam temporibus tempora neque accusantium facere
+                </p>
+            </div>
+            <button class="primary-button">
+                <img src="./assets/icons/bt_add_to_cart.svg" alt="">
+                Add to cart
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700" rel="stylesheet">
+    <style>
+        :root {
+            --pinkLight: #c7c7c7;
+            --inputFiled: #f7f7f7;
+            --greenHospital: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .mobile-menu {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+        }
+        .mobile-menu ul {
+            padding: 0;
+            list-style: none;
+            margin: 25px 0 25px 0;
+        }
+        .mobile-menu1{
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        .mobile-menu1 a, .mobile-menu2 a{
+            color: var(--black);
+        }
+        .mobile-menu2 {
+            font-weight: bold;
+        }
+        .mobile-menu2 li:nth-child(1) {
+            border-top: 1px solid var(--pinkLight);
+            margin-bottom: 50px;
+            padding-top: 40px;
+        }
+        .email-singout {
+            margin-bottom: 15px;
+        }
+        .email {
+            font-size: var(--sm);
+            font-weight: 300;
+            color: var(--black);
+        }
+        .sing-out {
+            color: var(--greenHospital);
+            font-weight: bold;
+            font-size: var(--sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <div class="mobile-menu1">
+            <ul>
+                <li>
+                    <a href="/">CATEGORIES</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">All</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="mobile-menu2">
+            <li>
+                <a href="/">My orders</a>
+            </li>
+            <li>
+                <a href="/">My account</a>
+            </li>
+        </ul>
+
+        <ul class="email-singout">
+            <li>
+                <a href="/" class="email">platziExample3@gmail.com</a>
+            </li>
+            <li>
+                <a href="/" class="sing-out">Sing out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
